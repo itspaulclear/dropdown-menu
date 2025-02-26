@@ -1,0 +1,69 @@
+:root {
+    --nav-background-color: rgba(25, 25, 25, 0.2);
+    --nav-backdrop-filter: blur(10px);
+    --nav-outline-color: black;
+    --nav-tooltip-color: rgba(0, 0, 0, 0.7);
+    --text-color: black;
+    --text-color-light: white;
+    
+    --font-size: 16px;
+    --menu-width: 250px;
+    --menu-height: auto;
+
+    --font-family: 'Open Sans', sans-serif;
+    
+    --dark-background: white;
+    --light-background: #001524;
+
+    --mobile-breakpoint: 768px;
+    --tablet-breakpoint: 992px;
+  }
+  
+.dark-mode {
+    --nav-background-color: rgba(25, 25, 25, 0.2);
+    --nav-outline-color: black;
+    --text-color: black;
+    --background-color: white;
+}
+
+.light-mode {
+    --nav-background-color: rgba(255, 255, 255, 0.2);
+    --nav-outline-color: white;
+    --text-color: white;
+    --background-color: #001524;
+}
+
+@media(min-width:200px) and (max-width:768px) {
+    #barraNavegacion {
+        max-width: 75%;
+    }
+
+    #lateralMenu {
+        max-width: 30vw;
+    }
+
+    #menuIcon, #colorToggleButton {
+        top: 20px;
+        opacity: .3;
+        transition: opacity .5s;
+    }
+
+    #menuIcon:hover, #colorToggleButton:hover {
+        opacity: 1;
+    }
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+    #barraNavegacion {
+        max-width: 85%;
+    }
+}
+
+@media(min-width:1200px) {
+    #barraNavegacion {
+        max-width: 110%;
+    }
+
+    
+}
+  
